@@ -80,20 +80,6 @@ EfiMain (
   kprint (my_house->Owner);
   kprint ("\n");
 
-  kprint ("BITMAP BEFORE #2: ");
-  kprint (__DecimalToHex ((UINTN)(Bitmap[DIV_ROUNDUP (((UINTN)my_house), KERN_SIZE_OF_PAGE)]), TRUE));
-  kprint ("\n");
-
-  kprint ("Here we are again!\n");
-
-  kfree (my_house, sizeof (House));
-
-  kprint ("BITMAP AFTER: ");
-  kprint (__DecimalToHex ((UINTN)(Bitmap[DIV_ROUNDUP (((UINTN)my_house), KERN_SIZE_OF_PAGE)]), TRUE));
-  kprint ("\n");
-
-  kprint (my_house->Name == NULL ? "IS NULL\n" : "NOT NULL\n");
-
   //
   //  Should never reach here.
   //  Will be removed later.
