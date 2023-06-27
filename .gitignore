@@ -1,0 +1,15 @@
+bootloader/*
+efi/*
+hda-contents/*
+.DS_Store
+.vscode
+*.o
+CMakeFiles/*
+build/*
+.idea
+CMakeCache*
+*.cmake
+Makefile
+*.pdb
+CMakeLists*
+zig-cc*
